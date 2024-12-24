@@ -4,6 +4,7 @@ import MyImage from '../assets/myImage.jpg';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import ProjectHshow from "./projectHshow";
 
 
 
@@ -64,18 +65,22 @@ function HomePage() {
 
             <Grid sx={{mt: 5, ml: 10}}>
                     
-                <Typography sx={{fontSize:"1.5rem",fontWeight: "bold"}}>On Going Projects</Typography>
+                <Typography sx={{fontSize:"1rem",fontWeight: "bold"}}>On Going Projects</Typography>
 
                 <Box sx={{
-                            width: '180px',
+                            width: '160px',
                             height: '1.5px',
-                            backgroundColor: 'white',
+                            backgroundImage: 'linear-gradient(to right,rgb(1, 1, 55),rgb(170, 0, 255))',
                             ml: 1.2,
                             mt:1.5
                         }} />
+                <ProjectHshow />
+
+            
+            <Divider sx={{mt:7,ml:8,backgroundColor: 'white' ,width: '90%'}} />
 
             </Grid>
-
+            
         </Grid>
     );
 }
