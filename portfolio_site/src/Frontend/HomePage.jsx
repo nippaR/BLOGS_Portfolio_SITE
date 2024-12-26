@@ -46,7 +46,7 @@ function HomePage() {
 
             {/*SOCIAL MEDIA ICONS*/}
 
-            <Grid sx={{mt: 4, ml: 10}}>
+            <Grid sx={{mt: 2, ml: 10}}>
                     <IconButton aria-label="Linkedin" sx={{ color: 'white', scale: 1.8, ":hover": {color: "#1e1eff"}}}>
                         <LinkedInIcon />
                     </IconButton>
@@ -61,9 +61,9 @@ function HomePage() {
                     </IconButton>
             </Grid>
 
-            <Divider sx={{mt:7,ml:8,backgroundColor: 'white' ,width: '90%'}} />
+            {/* <Divider sx={{mt:7,ml:8,backgroundColor: 'white' ,width: '90%'}} /> */}
 
-            <Grid sx={{mt: 5, ml: 10}}>
+            <Grid sx={{mt: 12, ml: 10}}>
                     
                 <Typography sx={{fontSize:"1rem",fontWeight: "bold"}}>On Going Projects</Typography>
 
@@ -74,13 +74,14 @@ function HomePage() {
                             ml: 1.2,
                             mt:1.5
                         }} />
+
+                        
                 <ProjectHshow />
 
-            
+            </Grid>
+
             <Divider sx={{mt:7,ml:8,backgroundColor: 'white' ,width: '90%'}} />
 
-            </Grid>
-            
         </Grid>
     );
 }
