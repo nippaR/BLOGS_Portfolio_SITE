@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/pro" element={<ProgectHshow />} />
-        <Route path="*" element={<Portfolio/>} />
+        <Route path="/portfolio" element={<Portfolio/>} />
       </Routes>
       {/* <Footer /> */}
     </BrowserRouter>

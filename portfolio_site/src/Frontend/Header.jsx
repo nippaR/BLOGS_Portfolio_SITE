@@ -46,7 +46,7 @@ function Header() {
                 </Button>
                 
                 <Button sx={{ml: 8,":hover": {backgroundColor: "#00006b"}}}>
-                    <RouterLink to="/pro" style={{ textDecoration: 'none', color:'white' }}>Portfolio</RouterLink>
+                    <RouterLink to="/portfolio" style={{ textDecoration: 'none', color:'white' }}>Portfolio</RouterLink>
                 </Button>
             
                 <Button sx={{ml: 8,":hover": {backgroundColor: "#00006b"}}}>
