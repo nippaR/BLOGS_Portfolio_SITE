@@ -28,6 +28,7 @@ import Image22 from '../assets/Skills-chips/selenium.png';
 import Image23 from '../assets/Skills-chips/TF.png';
 import Image24 from '../assets/Skills-chips/TS.png';
 import Image25 from '../assets/Skills-chips/wireshark.png';
+import Licenese from "./Licenese";
 
 
 function ResumeSec() {
@@ -101,7 +102,7 @@ function ResumeSec() {
             </Box>
 
             
-            <Box sx={{mt: 12, ml: 1}}>
+            <Box sx={{mt: 9, ml: 1}}>
                 <Typography sx={{fontSize:"1rem",fontWeight: "bold"}}>License & Certificate</Typography>
                 <Box sx={{
                     width: '360px',
@@ -111,7 +112,7 @@ function ResumeSec() {
                     mt:1.5
                 }} />
 
-                
+            < Licenese />
 
             </Box>
 
