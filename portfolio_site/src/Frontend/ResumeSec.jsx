@@ -1,4 +1,4 @@
-import { Grid, Typography, Box } from "@mui/material";
+import { Grid, Typography, Box, Divider, Link } from "@mui/material";
 import React from "react";
 import Avatar from '@mui/material/Avatar';
 import Chip from '@mui/material/Chip';
@@ -29,6 +29,7 @@ import Image23 from '../assets/Skills-chips/TF.png';
 import Image24 from '../assets/Skills-chips/TS.png';
 import Image25 from '../assets/Skills-chips/wireshark.png';
 
+
 function ResumeSec() {
 
     const Images = [Image1, Image2, Image3, Image4, Image5,Image6,Image7,Image8,Image9,Image10,Image11,Image12,Image13,Image14,Image15,Image16,Image17,Image18,Image19,Image20,Image21,Image22,Image23,Image24,Image25];
@@ -46,7 +47,7 @@ function ResumeSec() {
                 mt:1.5
             }} />
         
-            <Stack direction="row" spacing={1} sx={{mt: 3, ml: 1, gap: 2, flexWrap: 'wrap'}}> 
+            <Stack direction="row" spacing={1} sx={{mt: 8, ml: 5, gap: 2, flexWrap: 'wrap'}}> 
                 {Images.map((image, index) => (
                     <>
                         <Chip
@@ -60,6 +61,62 @@ function ResumeSec() {
                     </>
                 ))}
             </Stack>
+            
+            {/* <Divider sx={{mt:7,ml:8,backgroundColor: 'white' ,width: '90%'}} /> */}
+            
+            
+            <Typography sx={{fontSize:"1rem",fontWeight: "bold", ml: 1,mt:10}}>Education</Typography>
+
+            <Box sx={{
+                width: '360px',
+                height: '2.5px',
+                backgroundImage: 'linear-gradient(to right,rgb(0, 0, 106),rgb(170, 0, 255))',
+                ml: 1,
+                mt:1.5
+            }} />
+
+            <Box sx={{mt: 6, ml: 5}}>
+
+                <Stack direction='row' sx={{gap:40}}>
+
+                    <Typography sx={{fontSize:"1rem",fontWeight: "bold"}}>Bachelor Of Science (Hons.)</Typography>
+
+                    <Typography> 
+
+                        <Link href="https://www.sliit.lk" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'underline', color: 'white', fontStyle: 'italic', transform: 'scale(1.1)'}}>University Of SLIIT</Link> 
+
+                    </Typography>
+
+                    <Typography>Jan 2023 - Present</Typography>
+                </Stack>
+
+                <Typography sx={{mt: 2, ml:2 ,fontSize:"1rem"}}>Major in Information Technology</Typography>
+
+                <Stack direction='row' sx={{gap:41, mt: 12}}>
+                    <Typography sx={{fontSize:"1rem",fontWeight: "bold"}}>Higher Education</Typography>
+                    <Typography><Link href = 'https://pinnawalacentral.lk/' target='_blank' rel='noopener noreferrer'  style={{textDecoration: 'underline', color: 'white', fontStyle: 'italic'}}>Pinnawala Central College</Link></Typography>
+                    <Typography>Jan 2019 - Jan 2022</Typography>
+                </Stack>
+
+            </Box>
+
+            
+            <Box sx={{mt: 12, ml: 1}}>
+                <Typography sx={{fontSize:"1rem",fontWeight: "bold"}}>License & Certificate</Typography>
+                <Box sx={{
+                    width: '360px',
+                    height: '2.5px',
+                    backgroundImage: 'linear-gradient(to right,rgb(0, 0, 106),rgb(170, 0, 255))',
+                    ml: 0,
+                    mt:1.5
+                }} />
+
+                
+
+            </Box>
+
+
+
         </Grid>
     );
 }
