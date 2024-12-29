@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Grid, IconButton, Stack, Typography, Divider } from "@mui/material";
+import { Box, Button, Grid, IconButton, Stack, Typography, Divider, Link } from "@mui/material";
 import MyImage from '../assets/myImage.jpg';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
@@ -34,9 +34,11 @@ function HomePage() {
                             <Typography sx={{fontSize:"0.7rem"}}>Read My Blogs</Typography>
                         </Button>
 
+                        <Link href="/portfolio" style={{textDecoration: 'none', color: 'white'}} >
                         <Button variant="contained" sx={{backgroundColor: "#1e1eff", ":hover": {backgroundColor: "#00006b"}}}>
                             <Typography sx={{fontSize:"0.7rem"}}>Explore Portfolio</Typography>
                         </Button>
+                        </Link>
                     </Stack>
                 </Grid>
                     <Box sx={{ml: 15,  transition: 'transform 0.3s ease-in-out','&:hover': {transform: 'scale(1.1)'}}}>
