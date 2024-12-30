@@ -4,7 +4,7 @@ import MyImage from '../assets/myImage.jpg';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import ProjectHshow from "./projectHshow";
+import ProjectHshow from "./ProjectHshow";
 
 
 
