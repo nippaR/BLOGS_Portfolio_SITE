@@ -7,6 +7,7 @@ import Header from "./Frontend/Header";
 import Portfolio from "./Frontend/Portfolio";
 import Test from "./Frontend/test";
 import Projects from "./Frontend/Projects";
+import Track from "./Frontend/Trackerani";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio/>} />
         <Route path="/test" element={<Test />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/track" element={<Track />} />
       </Routes>
       {/* <Footer /> */}
     </BrowserRouter>
